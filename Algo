@@ -1,0 +1,35 @@
+Algorithm for Tic-Tac-Toe Game:
+Initialize the Game Board:
+
+Create a 3x3 board (array pos[3][3]) initialized with numbers from '1' to '9' representing empty spaces.
+Game Start:
+
+Print the welcome message and ask for player names.
+Assign the first player as 'x' and the second player as '0'.
+Display the Board:
+
+A function start() is defined to display the current state of the board after each move.
+The board is shown with numbers corresponding to empty spaces and 'x' or '0' for filled spaces.
+Game Loop:
+
+A loop runs continuously until the game ends. The game ends if:
+A player wins.
+The board is full (draw).
+In each iteration of the loop:
+Display the board.
+Prompt the current player (based on chance) to make a move (enter a number between 1 and 9).
+Validate the move:
+If the number is valid (between 1 and 9), check if the corresponding space on the board is empty.
+If the space is empty, place the current player's symbol ('x' or '0') on the board.
+If the space is already filled, prompt the player to enter a valid move again.
+After each valid move, toggle the current player (chance switches between 'x' and '0').
+Check for a Winner or Draw:
+
+A function goingon() checks if the game should continue:
+Check for three consecutive identical symbols ('x' or '0') in a row, column, or diagonal.
+If any row, column, or diagonal has all 'x' or all '0', the game ends, and the current player wins.
+If all spaces are filled and no winner is found, it's a draw.
+End of the Game:
+
+If a winner is found, display a congratulatory message for the winning player.
+If the game ends in a draw, display "The game is Draw".
