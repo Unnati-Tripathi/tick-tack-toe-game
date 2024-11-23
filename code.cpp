@@ -16,11 +16,11 @@ using namespace std;
     cout<< "   |    |    \n ";
     cout<<""<<pos[0][0]<<" | "<<" "<<pos[0][1]<<" | "<<pos[0][2] <<"\n";
     cout<< "   |    |    \n ";
-    cout<< "_|_|__\n";
+    cout<< "__|____|__\n";
     cout<< "   |    |   \n ";
      cout<<""<<pos[1][0]<<" | "<<" "<<pos[1][1]<<" | "<<pos[1][2] <<"\n";
     cout<< "   |    |   \n ";
-    cout<< "_|_|__\n";
+    cout<< "__|____|__\n";
     cout<< "   |    |   \n ";
    cout<<""<<pos[2][0]<<" | "<<" "<<pos[2][1]<<" | "<<pos[2][2] <<"\n";
     cout<< "   |    |   \n ";
@@ -133,6 +133,7 @@ void functions(){
              start();
              functions();
              goingon();
+             cout<<endl;
          }
          if(chance =='0' && t == false){
              cout<<"congracts!!!"<<" "<<a<<" you win..."<<endl;
